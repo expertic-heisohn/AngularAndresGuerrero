@@ -4,6 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { EventComponent } from './components/event/event.component'
+import { FormsModule,ReactiveFormsModule  } from '@angular/forms';
+
 
 
 @NgModule({
@@ -12,9 +14,12 @@ import { EventComponent } from './components/event/event.component'
     EventComponent,
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot()
+    
   ],
   providers: [],
   bootstrap: [AppComponent],
